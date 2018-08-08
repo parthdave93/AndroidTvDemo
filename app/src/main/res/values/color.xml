@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_guidedstep_actions_background">#3488AA</color>
+    <color name="app_guidedstep_subactions_background">#454978</color>
+
+</resources>

@@ -1,0 +1,75 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.parthdave93.tvdemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <application
+        android:name=".core.ApplicationClass"
+        android:allowBackup="true"
+        android:banner="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Leanback">
+
+        <activity
+            android:name=".normal_tutorial.ui.login.LoginActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:theme="@style/Theme.Leanback">
+
+        </activity>
+
+        <activity
+            android:name=".normal_tutorial.ui.MainActivity"
+            android:theme="@style/Theme.Leanback" >
+
+        </activity>
+        <activity
+            android:name=".normal_tutorial.ui.DetailActivity"
+            android:theme="@style/Theme.Leanback" />
+
+
+        <activity
+            android:name=".tutorial1.Tutorial1Activity"
+            android:theme="@style/Theme.Leanback" >
+
+        </activity>
+
+
+        <activity
+            android:name=".tutorial2.Tutorial2Activity"
+            android:theme="@style/Theme.Leanback" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".tutorial3.Tutorial3Activity"
+            android:theme="@style/Theme.Leanback" >
+
+        </activity>
+
+
+        <activity
+            android:name=".tutorial4.ErrorActivity"
+            android:theme="@style/Theme.Leanback" >
+
+        </activity>
+    </application>
+
+</manifest>
